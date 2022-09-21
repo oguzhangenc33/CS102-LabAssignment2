@@ -38,6 +38,7 @@ public class App {
             }
         }
         return sum;
+    }
     public static int getMinimum(int[] arr){
         int min = Integer.MAX_VALUE;
 
