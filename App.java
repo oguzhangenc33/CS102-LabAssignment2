@@ -65,7 +65,12 @@ public class App {
                 int size = input.nextInt();
                 randArray = setArray( size );
                 System.out.println("Your random generated array: " + Arrays.toString( randArray ) );
-            } else if( selection == 2 ) {
+            } else if( selection == 9 ) {
+                exit = true;
+                System.out.println("Exiting...");
+            } else if( randArray.length == 0 ) {
+                System.out.println("First you need to generate array with selection '1' ");
+            }else if( selection == 2 ) {
                 int minValue = getMinimum( randArray );
                 System.out.println("Minimum number of the array: " + minValue);
             } else if( selection == 3 ) {
@@ -80,9 +85,6 @@ public class App {
             }  else if( selection == 6 ) {
                 int sum = calculateSpecialSum( randArray, true );
                 System.out.println("Sum of odd indexed values: " + sum);
-            } else if( selection == 9 ) {
-                exit = true;
-                System.out.println("Exiting...");
             } else {
                 System.out.println("This is not a valid selection.");
             }
