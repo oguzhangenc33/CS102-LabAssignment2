@@ -18,4 +18,4 @@ int calculateAverage( int[] array )
 
 e: 
 Oğuzhan
-int calculateSpecialSum( int[] array )
+int calculateSpecialSum( int[] array, boolean isOdd )
