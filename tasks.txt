@@ -14,7 +14,7 @@ int getMaximum( int[] array )
 
 d: 
 Kutluhan
-int calculateAverage( int[] array )
+int[] diffFromAverage( int[] array )
 
 e: 
 Oğuzhan
