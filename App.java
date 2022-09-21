@@ -120,7 +120,7 @@ public class App {
             }
 
         } while (exit == false);
-
+        input.close();
     }
 }
 
