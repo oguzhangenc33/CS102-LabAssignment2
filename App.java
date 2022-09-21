@@ -1,5 +1,15 @@
-public class App {
+import java.util.Arrays;
 
+public class App {
+    
+    public static int[] setArray (int size){
+        int[] intArray = new int[size];
+
+        for(int k = 0; k < intArray.length; k++){
+            intArray[k] = (int) (101 * Math.random());
+        }
+
+<<<<<<< HEAD
     public static int calculateSpecialSum (int[] arr, boolean isOdd){
         int lenght = arr.length;
         int sum = 0;
@@ -44,3 +54,10 @@ public class App {
         return max;
     }
 }
+=======
+        return intArray;
+    }
+}
+
+    
+>>>>>>> Erdem
