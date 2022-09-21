@@ -4,12 +4,26 @@ public class App {
     
     public static int[] setArray (int size){
         int[] intArray = new int[size];
-
         for(int k = 0; k < intArray.length; k++){
             intArray[k] = (int) (101 * Math.random());
         }
         return intArray;
-    }   
+    } 
+    public static int[] diffFromAverage(int[] arr) {
+        int total = 0;
+        int average;
+        int[] newArr = new int[arr.length];
+        for (int n : arr) {
+            total += n;
+        }
+        average = total / arr.length;
+
+        for (int i = 0; i < newArr.length; i++) {
+            newArr[i] = arr[i] - average;
+        }
+
+        return newArr;
+    }
     public static int calculateSpecialSum (int[] arr, boolean isOdd){
         int lenght = arr.length;
         int sum = 0;
@@ -24,7 +38,6 @@ public class App {
             }
         }
         return sum;
-    }
     public static int getMinimum(int[] arr){
         int min = Integer.MAX_VALUE;
 
