@@ -43,10 +43,11 @@ public class App {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         boolean exit = false;
-        int[] randArray;
+        int[] randArray = new int[0];
 
         do {
             System.out.printf("""
+
             Array: %s
             1 - Set random array
             2 - Get minimum value of array    
@@ -55,7 +56,9 @@ public class App {
             5 - Calculate sum of even indexed values
             6 - Calculate sum of odd indexed values
             9 - Exit
-            """, randArray == null ? Arrays.toString(randArray) : "Not generated yet.");
+
+            """, randArray.length != 0 ? Arrays.toString(randArray) : "Not generated yet.");
+            System.out.print( "Selection: " );
             int selection = input.nextInt();
             if( selection == 1 ) {
                 System.out.println("Enter size of the array which will be created");
@@ -70,6 +73,7 @@ public class App {
                 System.out.println("Maximum number of the array: " + maxValue);
             } else if( selection == 4 ) {
                 int[] diffArray = diffFromAverage( randArray );
+                System.out.println( "Differences from average: " + Arrays.toString( diffArray ) );
             } else if( selection == 5 ) {
                 int sum = calculateSpecialSum( randArray, false );
                 System.out.println("Sum of even indexed values: " + sum);
