@@ -2,7 +2,6 @@ Interfaces for programs:
 a: 
 Erdem
 int[] setArray ( int size )
-int[] getArray( )
 
 b: 
 Kaan
