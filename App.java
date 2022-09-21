@@ -8,8 +8,8 @@ public class App {
         for(int k = 0; k < intArray.length; k++){
             intArray[k] = (int) (101 * Math.random());
         }
-
-<<<<<<< HEAD
+        return intArray;
+    }   
     public static int calculateSpecialSum (int[] arr, boolean isOdd){
         int lenght = arr.length;
         int sum = 0;
@@ -54,10 +54,4 @@ public class App {
         return max;
     }
 }
-=======
-        return intArray;
-    }
-}
 
-    
->>>>>>> Erdem
