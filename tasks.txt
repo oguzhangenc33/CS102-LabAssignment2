@@ -1,0 +1,21 @@
+Interfaces for programs:
+a: 
+Erdem
+int[] getArray( int size )
+
+b: 
+Kaan
+void main()
+
+c: 
+Furkan
+int getMinimum( int[] array )
+int getMaximum( int[] array )
+
+d: 
+Kutluhan
+int calculateAverage( int[] array )
+
+e: 
+Oğuzhan
+int calculateSpecialSum( int[] array )
