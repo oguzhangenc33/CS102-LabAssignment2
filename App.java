@@ -56,6 +56,11 @@ public class App {
     }
 
 
+
+
+
+
+
     public static int getMaximum(int[] arr){
         int max = Integer.MIN_VALUE;
 
